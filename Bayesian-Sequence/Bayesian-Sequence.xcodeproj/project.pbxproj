@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E471CE522D6AF100044955A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E471CE422D6AF100044955A /* main.cpp */; };
+		1ED3C03522D6B1A100083F9B /* Observation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03322D6B1A100083F9B /* Observation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1E471CE122D6AF100044955A /* Bayesian-Sequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bayesian-Sequence"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E471CE422D6AF100044955A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1ED3C03322D6B1A100083F9B /* Observation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observation.cpp; sourceTree = "<group>"; };
+		1ED3C03422D6B1A100083F9B /* Observation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observation.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1E471CE422D6AF100044955A /* main.cpp */,
+				1ED3C03322D6B1A100083F9B /* Observation.cpp */,
+				1ED3C03422D6B1A100083F9B /* Observation.hpp */,
 			);
 			path = "Bayesian-Sequence";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED3C03522D6B1A100083F9B /* Observation.cpp in Sources */,
 				1E471CE522D6AF100044955A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 625TS2W23V;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -249,7 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 625TS2W23V;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
