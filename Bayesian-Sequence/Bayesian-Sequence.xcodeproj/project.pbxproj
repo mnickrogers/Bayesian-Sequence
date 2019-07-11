@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				1E471CE422D6AF100044955A /* main.cpp */,
-				1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */,
 				1ED3C03722D6B31200083F9B /* BayesianSequence.hpp */,
-				1ED3C03322D6B1A100083F9B /* Observation.cpp */,
+				1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */,
 				1ED3C03422D6B1A100083F9B /* Observation.hpp */,
+				1ED3C03322D6B1A100083F9B /* Observation.cpp */,
 			);
 			path = "Bayesian-Sequence";
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 625TS2W23V;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -261,7 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 625TS2W23V;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
