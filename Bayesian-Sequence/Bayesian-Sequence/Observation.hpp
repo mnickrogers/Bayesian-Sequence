@@ -10,6 +10,7 @@
 #define Observation_hpp
 
 #include <stdio.h>
+#include "Event.hpp"
 
 /*
  The observation class handles a single observation of data.
@@ -24,6 +25,75 @@
  */
 class Observation
 {
+public:
+    
+    Observation(Event * event = nullptr,
+                Observation * previous = nullptr,
+                Observation * next = nullptr,
+                double contingent_probability = 0.5)
+    {
+        _event = event;
+        _previous_observation = previous;
+        _next_observation = next;
+        _contingent_probability = contingent_probability;
+    }
+    
+    ~Observation()
+    {
+        delete _event;
+    }
+    
+    void set_contingent_probability(double probability)
+    {
+        _contingent_probability = probability;
+    }
+    
+    double get_contingent_probability() const
+    {
+        return _contingent_probability;
+    }
+    
+    void set_event(Event * event)
+    {
+        _event = event;
+    }
+    
+    Event * get_event() const
+    {
+        return _event;
+    }
+    
+    void set_next(Observation * next)
+    {
+        _next_observation = next;
+    }
+    
+    void set_previous(Observation * previous)
+    {
+        _previous_observation = previous;
+    }
+    
+    Observation * next() const
+    {
+        return _next_observation;
+    }
+    
+    Observation * previous() const
+    {
+        return _previous_observation;
+    }
+    
+private:
+    
+    // An event.
+    Event               *   _event;
+    // The observation before this observation
+    Observation         *   _previous_observation;
+    // The observation after this observation
+    Observation         *   _next_observation;
+    // Probability of this event happening if the conclusion happens.
+    double                  _contingent_probability;
+    
 };
 
 #endif /* Observation_hpp */
