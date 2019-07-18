@@ -66,6 +66,25 @@
 		1E471CE322D6AF100044955A /* Bayesian-Sequence */ = {
 			isa = PBXGroup;
 			children = (
+				1ED3C03E22E01D5A00083F9B /* test */,
+				1ED3C03F22E01D6300083F9B /* src */,
+				1ED3C04122E01D7500083F9B /* build */,
+				1ED3C04222E01D8A00083F9B /* tools */,
+				1ED3C04022E01D6C00083F9B /* docs */,
+			);
+			path = "Bayesian-Sequence";
+			sourceTree = "<group>";
+		};
+		1ED3C03E22E01D5A00083F9B /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		1ED3C03F22E01D6300083F9B /* src */ = {
+			isa = PBXGroup;
+			children = (
 				1E471CE422D6AF100044955A /* main.cpp */,
 				1ED3C03722D6B31200083F9B /* BayesianSequence.hpp */,
 				1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */,
@@ -74,7 +93,28 @@
 				1ED3C03A22D6B48C00083F9B /* Event.hpp */,
 				1ED3C03922D6B48C00083F9B /* Event.cpp */,
 			);
-			path = "Bayesian-Sequence";
+			path = src;
+			sourceTree = "<group>";
+		};
+		1ED3C04022E01D6C00083F9B /* docs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		1ED3C04122E01D7500083F9B /* build */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		1ED3C04222E01D8A00083F9B /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
