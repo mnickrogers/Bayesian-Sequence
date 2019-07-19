@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E471CE522D6AF100044955A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E471CE422D6AF100044955A /* main.cpp */; };
-		1ED3C03522D6B1A100083F9B /* Observation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03322D6B1A100083F9B /* Observation.cpp */; };
-		1ED3C03822D6B31200083F9B /* BayesianSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */; };
-		1ED3C03B22D6B48C00083F9B /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03922D6B48C00083F9B /* Event.cpp */; };
+		1ED3C04922E1461000083F9B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C04822E1461000083F9B /* main.cpp */; };
+		1EF8AFB322E147FD0057B33F /* BayesianSequence.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03722D6B31200083F9B /* BayesianSequence.hpp */; };
+		1EF8AFB422E148020057B33F /* Observation.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03422D6B1A100083F9B /* Observation.hpp */; };
+		1EF8AFB522E148070057B33F /* Event.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C03A22D6B48C00083F9B /* Event.hpp */; };
+		1EF8AFBA22E14BA80057B33F /* BayesianSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8AFB922E14BA80057B33F /* BayesianSequence.cpp */; };
+		1EF8AFBC22E14C1B0057B33F /* Observation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8AFBB22E14C1B0057B33F /* Observation.cpp */; };
+		1EF8AFBE22E14C4F0057B33F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8AFBD22E14C4F0057B33F /* Event.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,13 +30,13 @@
 
 /* Begin PBXFileReference section */
 		1E471CE122D6AF100044955A /* Bayesian-Sequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bayesian-Sequence"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E471CE422D6AF100044955A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		1ED3C03322D6B1A100083F9B /* Observation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observation.cpp; sourceTree = "<group>"; };
 		1ED3C03422D6B1A100083F9B /* Observation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observation.hpp; sourceTree = "<group>"; };
-		1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BayesianSequence.cpp; sourceTree = "<group>"; };
 		1ED3C03722D6B31200083F9B /* BayesianSequence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BayesianSequence.hpp; sourceTree = "<group>"; };
-		1ED3C03922D6B48C00083F9B /* Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		1ED3C03A22D6B48C00083F9B /* Event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		1ED3C04822E1461000083F9B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		1EF8AFB922E14BA80057B33F /* BayesianSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BayesianSequence.cpp; path = src/BayesianSequence.cpp; sourceTree = SOURCE_ROOT; };
+		1EF8AFBB22E14C1B0057B33F /* Observation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Observation.cpp; path = src/Observation.cpp; sourceTree = SOURCE_ROOT; };
+		1EF8AFBD22E14C4F0057B33F /* Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = src/Event.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +88,13 @@
 		1ED3C03F22E01D6300083F9B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				1E471CE422D6AF100044955A /* main.cpp */,
+				1ED3C04822E1461000083F9B /* main.cpp */,
 				1ED3C03722D6B31200083F9B /* BayesianSequence.hpp */,
-				1ED3C03622D6B31200083F9B /* BayesianSequence.cpp */,
+				1EF8AFB922E14BA80057B33F /* BayesianSequence.cpp */,
 				1ED3C03422D6B1A100083F9B /* Observation.hpp */,
-				1ED3C03322D6B1A100083F9B /* Observation.cpp */,
+				1EF8AFBB22E14C1B0057B33F /* Observation.cpp */,
 				1ED3C03A22D6B48C00083F9B /* Event.hpp */,
-				1ED3C03922D6B48C00083F9B /* Event.cpp */,
+				1EF8AFBD22E14C4F0057B33F /* Event.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -173,10 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED3C03B22D6B48C00083F9B /* Event.cpp in Sources */,
-				1ED3C03822D6B31200083F9B /* BayesianSequence.cpp in Sources */,
-				1ED3C03522D6B1A100083F9B /* Observation.cpp in Sources */,
-				1E471CE522D6AF100044955A /* main.cpp in Sources */,
+				1EF8AFBA22E14BA80057B33F /* BayesianSequence.cpp in Sources */,
+				1EF8AFBE22E14C4F0057B33F /* Event.cpp in Sources */,
+				1EF8AFB522E148070057B33F /* Event.hpp in Sources */,
+				1EF8AFBC22E14C1B0057B33F /* Observation.cpp in Sources */,
+				1EF8AFB422E148020057B33F /* Observation.hpp in Sources */,
+				1EF8AFB322E147FD0057B33F /* BayesianSequence.hpp in Sources */,
+				1ED3C04922E1461000083F9B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

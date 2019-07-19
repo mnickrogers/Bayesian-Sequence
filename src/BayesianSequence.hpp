@@ -17,7 +17,7 @@ public:
         _prior_probability = _posterior_probability = prior;
         _start_observation = _last_observation = nullptr;
     }
-    
+
     ~BayesianSequence()
     {
         Observation *obs = _start_observation;
