@@ -25,6 +25,11 @@ void BayesianSequence::set_prior(double probability)
     _posterior_probability = _prior_probability = probability;
 }
 
+double BayesianSequence::probability() const
+{
+    return _posterior_probability;
+}
+
 void BayesianSequence::add_observation(Observation * obs)
 {
     // Two cases here. Either this is the first object added to this BayesianSequence object or not.
