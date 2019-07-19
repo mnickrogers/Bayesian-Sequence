@@ -13,20 +13,11 @@ class Event
 {
 public:
     
-    Event(double probability = 0.0)
-    {
-        _random_probability = normalize(probability);
-    }
+    Event(double probability = 0.0);
     
-    void set_probability(double probability)
-    {
-        _random_probability = normalize(probability);
-    }
+    void set_probability(double probability);
     
-    double probability() const
-    {
-        return _random_probability;
-    }
+    double probability() const;
     
 private:
     
