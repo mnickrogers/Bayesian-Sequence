@@ -22,58 +22,25 @@ public:
     Observation(Event * event = nullptr,
                 Observation * previous = nullptr,
                 Observation * next = nullptr,
-                double contingent_probability = 0.5)
-    {
-        _event = event;
-        _previous_observation = previous;
-        _next_observation = next;
-        _contingent_probability = contingent_probability;
-    }
+                double contingent_probability = 0.5);
     
-    ~Observation()
-    {
-        delete _event;
-    }
+    ~Observation();
     
-    void set_contingent_probability(double probability)
-    {
-        _contingent_probability = probability;
-    }
+    void set_contingent_probability(double probability);
     
-    double get_contingent_probability() const
-    {
-        return _contingent_probability;
-    }
+    double get_contingent_probability() const;
     
-    void set_event(Event * event)
-    {
-        _event = event;
-    }
+    void set_event(Event * event);
     
-    Event * get_event() const
-    {
-        return _event;
-    }
+    Event * get_event() const;
     
-    void set_next(Observation * next)
-    {
-        _next_observation = next;
-    }
+    void set_next(Observation * next);
     
-    void set_previous(Observation * previous)
-    {
-        _previous_observation = previous;
-    }
+    void set_previous(Observation * previous);
     
-    Observation * next() const
-    {
-        return _next_observation;
-    }
+    Observation * next() const;
     
-    Observation * previous() const
-    {
-        return _previous_observation;
-    }
+    Observation * previous() const;
     
 private:
     
